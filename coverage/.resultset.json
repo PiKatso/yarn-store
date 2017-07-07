@@ -15,6 +15,13 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         null,
         null
@@ -241,7 +248,7 @@
         1,
         null,
         1,
-        11,
+        14,
         4,
         null,
         null,
@@ -385,14 +392,14 @@
       "/Users/katgifford1/Desktop/yarn_store/app/controllers/sessions_controller.rb": [
         1,
         1,
-        1,
-        1,
+        2,
+        2,
         1,
         1,
         1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         null,
@@ -406,7 +413,7 @@
       "/Users/katgifford1/Desktop/yarn_store/app/controllers/users_controller.rb": [
         1,
         1,
-        5,
+        6,
         null,
         null,
         1,
@@ -511,8 +518,8 @@
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         1,
         null,
         null,
@@ -676,6 +683,6 @@
         null
       ]
     },
-    "timestamp": 1499470763
+    "timestamp": 1499470887
   }
 }
