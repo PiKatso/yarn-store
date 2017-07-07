@@ -9,7 +9,7 @@ describe Product do
   it { should validate_presence_of :length }
   it { should validate_presence_of :weight }
   it { should validate_presence_of :color }
-  # it { should validate_presence_of :care }
+  it { should validate_presence_of :care }
 
   it { should have_many :reviews }
   it { should validate_numericality_of(:price)}
