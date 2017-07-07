@@ -12,9 +12,10 @@ describe "follows the path of signing up as a user" do
     expect(page).to have_content 'User registration successful'
   end
 
-  # it "gives error when no name is entered" do
-  #   visit new_list_path
-  #   click_on 'Create List'
-  #   expect(page).to have_content 'errors'
-  # end
+  it "gives error when no name is entered" do
+    visit root_path
+    click_link 'Sign up'
+    click_on 'Sign Up'
+    expect(page).to have_content 'There was a problem with your registration'
+  end
 end
