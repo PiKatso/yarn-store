@@ -510,8 +510,8 @@
         1,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         1,
@@ -605,6 +605,12 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/katgifford1/Desktop/yarn_store/spec/models/user_spec.rb": [
@@ -630,6 +636,6 @@
         null
       ]
     },
-    "timestamp": 1499467995
+    "timestamp": 1499468072
   }
 }
