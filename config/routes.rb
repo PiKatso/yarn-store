@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :reveiws
-  resources :products
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'users#index'
+
+  resources :users do
+    resources :products
+
+  resources :products do
+    resources :reviews
+  end
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
+  get '/signin' => 'sessions#new'
+  post '/signin' => 'sessions#create'
+  get '/signout' => 'sessions#destroy'
+
 end
