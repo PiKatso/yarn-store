@@ -5,7 +5,7 @@ describe Product do
   it { should validate_presence_of :price }
   it { should validate_presence_of :description }
   it { should validate_presence_of :image }
-  # it { should validate_presence_of :material }
+  it { should validate_presence_of :material }
   # it { should validate_presence_of :length }
   # it { should validate_presence_of :weight }
   # it { should validate_presence_of :color }
