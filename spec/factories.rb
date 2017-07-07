@@ -32,9 +32,7 @@ FactoryGirl.define do
     content('I liked this yarn, it was fiborous')
     author('coco')
     association :user_id, factory: :user
-    # user_id('password')
     association :product_id, factory: :product
-    # product-id('password')
   end
 
 end
