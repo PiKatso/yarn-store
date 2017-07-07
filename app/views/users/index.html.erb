@@ -1,11 +1,18 @@
-<h1>Users</h1>
+<div class="splash">
+  <h1>Stitch Fix</h1>
+  <h3>You're one stop online shop for all things yarn!</h3>
 
-<ul>
-  <% @users.each do |user| %>
-    <li><%= link_to "Show", user_path(user) %></li>
-  <% end %>
-</ul>
+  <p>
+    Stitch Fix is a beloved resource for needlecrafters of every ilk, from knitters and crocheters to quilters and embroiderers. Since 2013, we have been sharing our passion for beauty and exceptional design, for natural fibers and crafting traditions.
+  </p>
+  <p>
+    We are especially proud of our gorgeous collection of yarns and fabrics, as well as our online content. Crafters from all corners of the world visit Stitch Fix for creative nourishment and inspiration!
+  </p>
+  <p>
+    In our store and here on our website, the heart of our business is and always has been our community of customers and readers. We love to answer questions, share accomplishments, research solutions and exchange ideas. It’s why we do what we do, so please reach out... We’d be very happy to meet you!
+  </p>
 
-<hr>
+  <p><em>- Stitch Fix</em></p>
 
-<%= link_to "New User", new_user_path %>
+  <%= link_to "Shop our Collection", products_path %>
+</div>

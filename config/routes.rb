@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   root to: 'users#index'
 
-  resources :users do
-    resources :products
+  # resources :users do
+  #   resources :products
+  # end
 
   resources :products do
     resources :reviews
