@@ -1,6 +1,7 @@
-class ReveiwsController < ApplicationController
+class ReviewsController < ApplicationController
+
   def index
-    @reveiws = Review.all
+    @reviews = Review.all
   end
 
   def show
@@ -14,7 +15,8 @@ class ReveiwsController < ApplicationController
 
   def create
     @product = Product.find(params[:product_id])
-    @review = @product.reviews.new(review_params)
+    @review = @product.reviews.create(review_params)
+    @review.user_id = current_user.id
     if @review.save
     flash[:notice] = "Review successfully added!"
       redirect_to  product_path(@product)
@@ -42,7 +44,7 @@ class ReveiwsController < ApplicationController
     @review = Review.find(params[:id])
     if @review.destroy
       flash[:notice] = "Review successfully removed!"
-      redirect_to reveiws_path
+      redirect_to reviews_path
     end
   end
 

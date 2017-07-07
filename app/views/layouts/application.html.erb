@@ -10,11 +10,10 @@
 
   <body>
     <div class="user-log">
-      <%= link_to "Home", '/' %> |
       <% if current_user %>
-      <%= current_user.username %> | <%= link_to "Sign out", '/signout' %>
+      <%= current_user.name %> |   <%= link_to "Home", '/' %> | <%= link_to "Sign out", '/signout' %>
     <% else %>
-      <%= link_to "Sign up", '/signup' %> | <%= link_to "Sign in", '/signin' %>
+        <%= link_to "Home", '/' %> | <%= link_to "Sign up", '/signup' %> | <%= link_to "Sign in", '/signin' %>
     <% end %>
     </div>
 
