@@ -28,12 +28,13 @@ FactoryGirl.define do
     care('hand wash cold')
   end
 
-  # factory(:review) do
-  #   content('I liked this yarn, it was fiborous')
-  #   author('coco')
-  #   password('password')
-  #   password_confirmation('password')
-  #   admin(true)
-  # end
+  factory(:review) do
+    content('I liked this yarn, it was fiborous')
+    author('coco')
+    association :user_id, factory: :user
+    # user_id('password')
+    association :product_id, factory: :product
+    # product-id('password')
+  end
 
 end

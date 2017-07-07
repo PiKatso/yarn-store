@@ -8,4 +8,10 @@ describe Review do
   it { should belong_to :user }
   it { should validate_length_of(:content).is_at_least(10) }
   it { should validate_length_of(:content).is_at_most(200) }
+
+  it 'proves factory girl works for review' do
+    user = FactoryGirl.build(:user)
+    review = FactoryGirl.build(:review)
+    review.user_id.should eq user.id
+  end
 end
