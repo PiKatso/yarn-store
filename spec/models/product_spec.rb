@@ -13,4 +13,9 @@ describe Product do
 
   it { should have_many :reviews }
   it { should validate_numericality_of(:price)}
+
+  it 'proves factory girl works for product' do
+    product = FactoryGirl.build(:product)
+    product.name.should eq "stupify ribbons"
+  end
 end

@@ -17,6 +17,11 @@
         null,
         2,
         2,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/katgifford1/Desktop/yarn_store/spec/rails_helper.rb": [
@@ -539,6 +544,18 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         null,
         null,
@@ -606,6 +623,6 @@
         null
       ]
     },
-    "timestamp": 1499467002
+    "timestamp": 1499467443
   }
 }
