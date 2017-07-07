@@ -34,12 +34,11 @@
     </div>
 
     <% end %>
-    
+
 <% else %>
   <p>There are no reviews yet!</p>
-  <p><%= link_to "Leave a review", new_product_review_path(@product) %></p>
 <% end %>
-
+<p><%= link_to "Leave a review", new_product_review_path(@product) %></p>
 </div>
 <hr>
 

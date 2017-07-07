@@ -31,6 +31,7 @@ class ReviewsController < ApplicationController
   end
 
   def update
+    @product = Product.find(params[:product_id])
     @review= Review.find(params[:id])
     if @review.update(review_params)
       flash[:notice] = "Review successfully updated!"
@@ -41,16 +42,16 @@ class ReviewsController < ApplicationController
   end
 
   def destroy
+    @product = Product.find(params[:product_id])
     @review = Review.find(params[:id])
     if @review.destroy
       flash[:notice] = "Review successfully removed!"
-      redirect_to reviews_path
+      redirect_to  product_path(@product)
     end
   end
 
 private
   def review_params
-    # Use strict parameters, replace placeholder info below with your class' actual attributes
     params.require(:review).permit(:author, :content)
   end
 end
