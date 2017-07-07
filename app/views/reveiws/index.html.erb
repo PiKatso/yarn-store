@@ -1,0 +1,11 @@
+<h1>Reveiws</h1>
+
+<ul>
+  <% @reveiws.each do |review| %>
+    <li><%= link_to "Show", review_path(review) %></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<%= link_to "New Review", new_review_path %>
