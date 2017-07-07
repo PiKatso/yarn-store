@@ -8,20 +8,23 @@ class ReveiwsController < ApplicationController
   end
 
   def new
+    @product = Product.find(params[:product_id])
     @review = Review.new
   end
 
   def create
-    @review = Review.new(review_params)
+    @product = Product.find(params[:product_id])
+    @review = @product.reviews.new(review_params)
     if @review.save
     flash[:notice] = "Review successfully added!"
-      redirect_to  reveiws_path
+      redirect_to  product_path(@product)
     else
       render :new
     end
   end
 
   def edit
+    @product = Product.find(params[:product_id])
     @review = Review.find(params[:id])
   end
 
@@ -29,7 +32,7 @@ class ReveiwsController < ApplicationController
     @review= Review.find(params[:id])
     if @review.update(review_params)
       flash[:notice] = "Review successfully updated!"
-      redirect_to reveiws_path
+      redirect_to product_path(@review.product)
     else
       render :edit
     end
@@ -46,6 +49,6 @@ class ReveiwsController < ApplicationController
 private
   def review_params
     # Use strict parameters, replace placeholder info below with your class' actual attributes
-    params.require(:review).permit(:attribute1, :attribute2, :attribute3)
+    params.require(:review).permit(:author, :content)
   end
 end

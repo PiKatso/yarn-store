@@ -8,6 +8,12 @@
         2,
         2,
         2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         2,
         2,
@@ -293,8 +299,16 @@
         null,
         1,
         1,
-        null,
         0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -310,6 +324,7 @@
         null,
         1,
         0,
+        0,
         null,
         null,
         1,
@@ -317,12 +332,14 @@
         0,
         0,
         0,
+        0,
         null,
         0,
         null,
         null,
         null,
         1,
+        0,
         0,
         null,
         null,
@@ -444,6 +461,9 @@
       "/Users/katgifford1/Desktop/yarn_store/app/models/product.rb": [
         1,
         1,
+        null,
+        null,
+        null,
         1,
         1,
         null,
@@ -534,6 +554,6 @@
         null
       ]
     },
-    "timestamp": 1499450782
+    "timestamp": 1499455764
   }
 }

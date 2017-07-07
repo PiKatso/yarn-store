@@ -1,4 +1,48 @@
-<h1>Show Product</h1>
+<h1><%= @product.name %></h1>
+<div class="container">
+  <div class="col-md-6">
+    <%= image_tag @product.image, :class => "style_image" %>
+  </div>
+  <div class="col-md-6">
+    <h3><%= @product.description %></h3>
+    <p><%= @product.material %></p>
+    <p>skein is <%= @product.weight %> weight</p>
+    <p>skein has <%= @product.length %></p>
+    <p><%= @product.color %></p>
+    <p><%= @product.care %></p>
+  </div>
+</div>
+
+<div class="product-reviews">
+
+  <% if @product.reviews.any? %>
+
+  <h4>Reviews for <%= @product.name %></h4>
+
+    <% @product.reviews.each do |review| %>
+
+    <div class="indi-review">
+      <%= review.content %> ~ <em><%= review.author %>
+
+      <% if current_user %>
+        <%= link_to "Edit", edit_product_review_path(@product, review) %> |
+        <%= link_to "Delete", product_review_path(@product, review),
+          :data => {:confirm => "Are you sure?",
+          :method => "delete"} %>
+      <% end %>
+
+    </div>
+
+    <% end %>
+    
+<% else %>
+  <p>There are no reviews yet!</p>
+  <p><%= link_to "Leave a review", new_product_review_path(@product) %></p>
+<% end %>
+
+</div>
+<hr>
+
 
 <p><%= link_to "Edit", edit_product_path(@product) %></p>
 <p><%= link_to "Delete", product_path(@product),

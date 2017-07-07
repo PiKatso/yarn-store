@@ -1,5 +1,33 @@
 <%= render "layouts/errors", :object => @product %>
 
 <%= form_for @product do |f| %>
+
+  <%= f.label "Name" %>
+  <%= f.text_field :name %>
+<br>
+  <%= f.label "Description" %>
+  <%= f.text_field :name %>
+<br>
+  <%= f.label "Price" %>
+  <%= f.number_field :price %>
+<br>
+  <%= f.label "Image URL" %>
+  <%= f.text_field :string %>
+<br>
+  <%= f.label "Material" %>
+  <%= f.text_field :string %>
+<br>
+  <%= f.label "Skein Length (with Yards/Meters)" %>
+  <%= f.text_field :string %>
+<br>
+  <%= f.label "Weight" %>
+  <%= f.text_field :string %>
+<br>
+  <%= f.label "Color" %>
+  <%= f.text_field :string %>
+<br>
+  <%= f.label "Care" %>
+  <%= f.text_field :string %>
+<br>
   <%= f.submit %>
 <% end %>

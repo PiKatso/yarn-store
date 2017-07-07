@@ -45,7 +45,15 @@ class ProductsController < ApplicationController
 
 private
   def product_params
-    # Use strict parameters, replace placeholder info below with your class' actual attributes
-    params.require(:product).permit(:attribute1, :attribute2, :attribute3)
+    params.require(:product).permit(
+    :name,
+    :description,
+    :price,
+    :image,
+    :material,
+    :length,
+    :weight,
+    :color,
+    :care )
   end
 end
