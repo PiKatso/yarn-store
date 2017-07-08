@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe "follows the path of signing in" do
+
   it "follows user sign in process" do
     user = FactoryGirl.create(:user)
     visit root_path
@@ -17,6 +18,7 @@ describe "follows the path of signing in" do
     click_on 'Sign In'
     expect(page).to have_content 'There was a problem signing in. Please try again.'
   end
+  
 end
 
 

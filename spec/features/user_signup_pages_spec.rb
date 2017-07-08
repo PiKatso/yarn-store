@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe "follows the path of signing up as a user" do
+
   it "registers new user though signing up" do
     visit root_path
     click_link 'Sign up'
@@ -18,4 +19,5 @@ describe "follows the path of signing up as a user" do
     click_on 'Sign Up'
     expect(page).to have_content 'There was a problem with your registration'
   end
+  
 end
