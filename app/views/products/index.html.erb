@@ -1,12 +1,14 @@
-<h1>Products</h1>
-
-<ul>
+<div class="products">
   <% @products.each do |product| %>
   <div class="product">
-    <%= link_to product.name, product_path(product) %>
+    <a class="product-item" href="<%= product_path(product) %>">
+      <%= image_tag product.image, :class => "style_image" %>
+      <div class="product-caption"><em><%= product.name %></em><br>$<%= product.price %></div>
+    </a>
   </div>
   <% end %>
-</ul>
+</div>
+
 
 <hr>
 <% if current_user %>

@@ -1,12 +1,15 @@
 <h1>Sign in</h1>
 
 <%= form_tag signin_path do %>
-
+<div class="form-group">
   <%= label_tag :email %>
   <%= text_field_tag :email %>
+</div>
 <br>
+<div class="form-group">
   <%= label_tag :password %>
   <%= password_field_tag :password %>
+</div>
 <br>
-  <%= submit_tag "Sign In" %>
+  <%= submit_tag "Sign In", class: "btn btn-success"%>
 <% end %>

@@ -1,0 +1,41 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: url("https://cdn.shopify.com/s/files/1/0155/6639/t/18/assets/slideshow_1.jpg?13677715670024375774") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// PRODUCTS PATH
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: start;
+}
+.product {
+ .product-item {
+    text-decoration: none;
+    :hover {
+      font-size: 1.1em;
+    }
+    .product-caption {
+      font-size: 1em;
+      color: blue;
+      position: relative;
+      padding-top: 1em;
+      padding-bottom: 2em;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

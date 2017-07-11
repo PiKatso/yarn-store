@@ -1,33 +1,32 @@
 <%= render "layouts/errors", :object => @product %>
 
 <%= form_for @product do |f| %>
-
-  <%= f.label "Name" %>
-  <%= f.text_field :name %>
-<br>
-  <%= f.label "Description" %>
-  <%= f.text_field :description %>
-<br>
-  <%= f.label "Price" %>
-  <%= f.number_field :price %>
-<br>
-  <%= f.label "Image URL" %>
-  <%= f.text_field :image %>
-<br>
-  <%= f.label "Material" %>
-  <%= f.text_field :material %>
-<br>
-  <%= f.label "Skein Length (with Yards/Meters)" %>
-  <%= f.text_field :length %>
-<br>
-  <%= f.label "Weight" %>
-  <%= f.text_field :weight %>
-<br>
-  <%= f.label "Color" %>
-  <%= f.text_field :color %>
-<br>
-  <%= f.label "Care" %>
-  <%= f.text_field :care %>
-<br>
-  <%= f.submit %>
+<div class="form-group">
+  <%= f.text_field :name, placeholder: :name %>
+</div>
+<div class="form-group">
+  <%= f.text_field :description, placeholder: :description  %>
+</div>
+<div class="form-group">
+  <%= f.number_field :price, placeholder: '00.00' %>
+</div>
+<div class="form-group">
+  <%= f.text_field :image, placeholder: 'Image URL'  %>
+</div>
+<div class="form-group">
+  <%= f.text_field :material, placeholder: :material  %>
+</div>
+<div class="form-group">
+  <%= f.text_field :length, placeholder: "Skein Length (with Yards/Meters)"  %>
+</div>
+<div class="form-group">
+  <%= f.text_field :weight, placeholder: :weight  %>
+</div>
+<div class="form-group">
+  <%= f.text_field :color, placeholder: :color  %>
+</div>
+<div class="form-group">
+  <%= f.text_field :care, placeholder: :care  %>
+</div>
+  <%= f.submit class: 'btn btn-success'%>
 <% end %>

@@ -3,18 +3,20 @@
 <h1> Sign up</h1>
 
 <%= form_for @user do |f| %>
-
-  <%= f.label "Name" %>
-  <%= f.text_field :name %>
+<div class="form-group">
+  <%= f.text_field :name, placeholder: :name %>
+</div>
 <br>
-  <%= f.label "Email" %>
-  <%= f.text_field :email %>
+<div class="form-group">
+  <%= f.text_field :email, placeholder: :email %>
+</div>
 <br>
-  <%= f.label "Password" %>
-  <%= f.password_field :password %>
+<div class="form-group">
+  <%= f.password_field :password, placeholder: :password %>
+</div>
 <br>
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
-<br>
-  <%= f.submit "Sign Up" %>
+<div class="form-group">
+  <%= f.password_field :password_confirmation, placeholder: :password_confirmation %>
+</div>
+  <%= f.submit "Sign Up", class: 'btn btn-success'%>
 <% end %>
