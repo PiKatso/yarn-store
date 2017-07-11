@@ -4,6 +4,16 @@
 
 #### By _**Kat Gifford**_
 
+##Views
+_Landing page:_
+![](https://github.com/PiKatso/yarn-store/blob/master/app/assets/images/index.png)
+
+_Products page:_
+![](https://github.com/PiKatso/yarn-store/blob/master/app/assets/images/products.png)
+
+_Product Detail page:_
+![](https://github.com/PiKatso/yarn-store/blob/master/app/assets/images/product.png)
+
 ## Setup/Installation Requirements
 
 * _Clone the repo_
@@ -15,6 +25,13 @@ $ rails db:schema:load
 $ rails db:seed
 $ rails s
 ```
+### Accounts
+The default credentials provided below, will allow you to see the website as a admin user. You may also sign up with your own information.
+
+| Type | Email | Password |
+| ---- | ----- | -------- |
+| user | user@user.com | password |
+| admin | admin@admin.com | password |
 
 ## Technologies Used
 
@@ -25,9 +42,6 @@ $ rails s
 * _Capybara_
 * _Faker_
 
-## View
-_landing page:_
-![]()
 
 ### License
 
