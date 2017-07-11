@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.1/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.1/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.1/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.1/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.1/favicon.png" />
   </head>
   
@@ -14,18 +14,18 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-10T22:00:27-07:00">2017-07-10T22:00:27-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-10T22:07:16-07:00">2017-07-10T22:07:16-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">86.9%</span></span>
+    (<span class="covered_percent"><span class="green">91.71%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.56
+         1.77
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>35</b> files in total.
     <b>374</b> relevant lines. 
-    <span class="green"><b>325</b> lines covered</span> and
-    <span class="red"><b>49</b> lines missed </span>
+    <span class="green"><b>343</b> lines covered</span> and
+    <span class="red"><b>31</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -77,7 +77,7 @@
         <td>10</td>
         <td>8</td>
         <td>2</td>
-        <td>15.2</td>
+        <td>19.6</td>
       </tr>
       
       <tr>
@@ -87,17 +87,17 @@
         <td>30</td>
         <td>13</td>
         <td>17</td>
-        <td>0.7</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#ffa21e0fdc0a294ab1afec1cbc8f621cd0d6c3ed" class="src_link" title="app/controllers/reviews_controller.rb">app/controllers/reviews_controller.rb</a></td>
-        <td class="red strong">52.78 %</td>
+        <td class="red strong">77.78 %</td>
         <td>58</td>
         <td>36</td>
-        <td>19</td>
-        <td>17</td>
-        <td>0.6</td>
+        <td>28</td>
+        <td>8</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -332,12 +332,12 @@
       
       <tr>
         <td class="strong"><a href="#41c315329ad4861a8e31be3495c957c23d2d4dac" class="src_link" title="spec/features/user_leave_comment_pages_spec.rb">spec/features/user_leave_comment_pages_spec.rb</a></td>
-        <td class="yellow strong">86.96 %</td>
+        <td class="green strong">100.0 %</td>
         <td>85</td>
         <td>69</td>
-        <td>60</td>
-        <td>9</td>
-        <td>0.9</td>
+        <td>69</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -546,14 +546,14 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="82" data-linenumber="6">
-          <span class="hits">82</span>
+        <li class="covered" data-hits="104" data-linenumber="6">
+          <span class="hits">104</span>
           
           <code class="ruby">    if session[:user_id]</code>
         </li>
       
-        <li class="covered" data-hits="62" data-linenumber="7">
-          <span class="hits">62</span>
+        <li class="covered" data-hits="84" data-linenumber="7">
+          <span class="hits">84</span>
           
           <code class="ruby">      @current_user ||= User.find(session[:user_id])</code>
         </li>
@@ -691,8 +691,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
           
           <code class="ruby">    @product = Product.find(params[:id])</code>
         </li>
@@ -1017,11 +1017,11 @@
         <div class="source_table" id="ffa21e0fdc0a294ab1afec1cbc8f621cd0d6c3ed">
   <div class="header">
     <h3>app/controllers/reviews_controller.rb</h3>
-    <h4><span class="red">52.78 %</span> covered</h4>
+    <h4><span class="red">77.78 %</span> covered</h4>
     <div>
       <b>36</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>17</b> lines missed.</span>
+      <span class="green"><b>28</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
     </div>
   </div>
   
@@ -1130,38 +1130,38 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="18">
+          <span class="hits">3</span>
           
           <code class="ruby">    @product = Product.find(params[:product_id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="19">
+          <span class="hits">3</span>
           
           <code class="ruby">    @review = @product.reviews.create(review_params)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="20">
+          <span class="hits">3</span>
           
           <code class="ruby">    @review.user_id = current_user.id</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
           
           <code class="ruby">    if @review.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
           
           <code class="ruby">    flash[:notice] = &quot;Review successfully added!&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
           
           <code class="ruby">      redirect_to  product_path(@product)</code>
         </li>
@@ -1202,14 +1202,14 @@
           <code class="ruby">  def edit</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
           
           <code class="ruby">    @product = Product.find(params[:product_id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">    @review = Review.find(params[:id])</code>
         </li>
@@ -1232,32 +1232,32 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="35">
-          
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
           
           <code class="ruby">    @product = Product.find(params[:product_id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="36">
-          
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
           <code class="ruby">    @review= Review.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
-          
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
           <code class="ruby">    if @review.update(review_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
-          
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:notice] = &quot;Review successfully updated!&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
-          
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to product_path(@review.product)</code>
         </li>
@@ -1358,8 +1358,8 @@
           <code class="ruby">  def review_params</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="56">
+          <span class="hits">4</span>
           
           <code class="ruby">    params.require(:review).permit(:author, :content)</code>
         </li>
@@ -3747,11 +3747,11 @@
         <div class="source_table" id="41c315329ad4861a8e31be3495c957c23d2d4dac">
   <div class="header">
     <h3>spec/features/user_leave_comment_pages_spec.rb</h3>
-    <h4><span class="yellow">86.96 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>69</b> relevant lines. 
-      <span class="green"><b>60</b> lines covered</span> and
-      <span class="red"><b>9</b> lines missed.</span>
+      <span class="green"><b>69</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -3839,7 +3839,7 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &#39;Products&#39;</code>
+          <code class="ruby">    expect(page).to have_content &#39;$&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -4001,23 +4001,23 @@
         <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;Author&#39;, :with =&gt; user.name</code>
+          <code class="ruby">    fill_in &#39;author&#39;, :with =&gt; user.name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    fill_in &#39;Content&#39;, :with =&gt; &quot;that there is some good yarn.&quot;</code>
+          <code class="ruby">    fill_in &#39;content&#39;, :with =&gt; &quot;that there is some good yarn.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
           
           <code class="ruby">    click_on &#39;Create Review&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content &#39;Review successfully added!&#39;</code>
         </li>
@@ -4199,41 +4199,41 @@
         <li class="covered" data-hits="1" data-linenumber="74">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;Author&#39;, :with =&gt; user.name</code>
+          <code class="ruby">    fill_in &#39;author&#39;, :with =&gt; user.name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="75">
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    fill_in &#39;Content&#39;, :with =&gt; &quot;that there is some good yarn.&quot;</code>
+          <code class="ruby">    fill_in &#39;content&#39;, :with =&gt; &quot;that there is some good yarn.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="76">
-          
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
           
           <code class="ruby">    click_on &#39;Create Review&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="77">
-          
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
           
           <code class="ruby">    click_link &#39;Edit&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    fill_in &#39;Author&#39;, :with =&gt; &#39;wayne&#39;</code>
+          <code class="ruby">    fill_in &#39;author&#39;, :with =&gt; &#39;wayne&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="79">
-          
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
           
           <code class="ruby">    click_on &#39;Update Review&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="80">
-          
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content &#39;Review successfully updated!&#39;</code>
         </li>

@@ -11,7 +11,7 @@ describe "follows the path of user leaving a comment on product" do
     fill_in 'Password', :with => user.password
     click_on 'Sign In'
     click_link 'Shop our Collection'
-    expect(page).to have_content 'Products'
+    expect(page).to have_content '$'
   end
 
   it "follows user to products detail page" do
@@ -38,8 +38,8 @@ describe "follows the path of user leaving a comment on product" do
     click_link 'Shop our Collection'
     click_link product.name
     click_link 'Leave a review'
-    fill_in 'Author', :with => user.name
-    fill_in 'Content', :with => "that there is some good yarn."
+    fill_in 'author', :with => user.name
+    fill_in 'content', :with => "that there is some good yarn."
     click_on 'Create Review'
     expect(page).to have_content 'Review successfully added!'
   end
@@ -71,11 +71,11 @@ describe "follows the path of user leaving a comment on product" do
     click_link 'Shop our Collection'
     click_link product.name
     click_link 'Leave a review'
-    fill_in 'Author', :with => user.name
-    fill_in 'Content', :with => "that there is some good yarn."
+    fill_in 'author', :with => user.name
+    fill_in 'content', :with => "that there is some good yarn."
     click_on 'Create Review'
     click_link 'Edit'
-    fill_in 'Author', :with => 'wayne'
+    fill_in 'author', :with => 'wayne'
     click_on 'Update Review'
     expect(page).to have_content 'Review successfully updated!'
   end
