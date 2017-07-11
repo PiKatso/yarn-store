@@ -9,22 +9,23 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-text pull-left">
-        <%= link_to "Home", '/', :class => 'navbar-link' %> | <%= link_to 'Shop', products_path, :class => 'navbar-link' %>
-            <h1>In Stitches</h1>
-      </div>
-
-      <div class="navbar-text pull-right">
-        <% if current_user %>
-        <%= current_user.name %> |   <%= link_to "Home", '/' %> | <%= link_to "Sign out", '/signout' %>
-        <% else %>
-         <%= link_to "Sign up", '/signup' %> | <%= link_to "Sign in", '/signin' %>
-        <% end %>
-      </div>
-    </div>
 
     <div class="container">
+      <div class="navbar">
+        <div class="navbar-text pull-left">
+          <%= link_to "Home", '/', :class => 'navbar-link' %> | <%= link_to 'Shop', products_path, :class => 'navbar-link' %>
+          <h1 class="centered">In Stitches</h1>
+        </div>
+
+        <div class="navbar-text pull-right">
+          <% if current_user %>
+          <%= current_user.name %> |   <%= link_to "Home", '/' %> | <%= link_to "Sign out", '/signout' %>
+          <% else %>
+          <%= link_to "Sign up", '/signup' %> | <%= link_to "Sign in", '/signin' %>
+          <% end %>
+        </div>
+      </div>
+
       <div class="flash">
         <%= flash[:alert] %>
         <%= flash[:notice] %>

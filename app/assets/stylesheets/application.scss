@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 
 body {
   background: url("https://cdn.shopify.com/s/files/1/0155/6639/t/18/assets/slideshow_1.jpg?13677715670024375774") no-repeat center center fixed;
@@ -8,12 +9,24 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.container {
+  margin-top: 8%;
+  margin-bottom: 6%;
+  background-color: #fffff0;
+  border-radius: 30px;
+  padding: 3%;
+}
+.centered {
+  text-align: center;
+  font-family: 'Oleo Script';
+}
 
 // PRODUCTS PATH
 .products {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 2em;
 }
 .product-item {
   display: flex;
