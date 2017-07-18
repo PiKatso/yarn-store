@@ -1,10 +1,10 @@
 # _In Stitches_
 
-#### _An application for creating and maintaining an online store with reviews. Complete with user authentication _
+#### An application for creating and maintaining an online store with reviews. Complete with user authentication
 
 #### By _**Kat Gifford**_
 
-##Views
+## Views
 _Landing page:_
 ![](https://github.com/PiKatso/yarn-store/blob/master/app/assets/images/index.png)
 
